@@ -11,7 +11,7 @@ ANSWER_ORDER_OPTIONS = (
 class MCQQuestion(Question):
 
     answer_order = models.CharField(
-        max_length=10000, null=True, blank=True,
+        max_length=1000000, null=True, blank=True,
         choices=ANSWER_ORDER_OPTIONS,
         help_text="The order in which multichoice \
                     answer options are displayed \
