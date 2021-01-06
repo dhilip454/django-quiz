@@ -107,7 +107,7 @@ class Quiz(models.Model):
         verbose_name=_("Fail Text"),
         blank=True, help_text=_("Displayed if user fails."))
 
-    draft = models.BooleanField(
+    draft = models.BooleanField(max_length=1000,
         blank=True, default=False,
         verbose_name=_("Draft"),
         help_text=_("If yes, the quiz is not displayed"
