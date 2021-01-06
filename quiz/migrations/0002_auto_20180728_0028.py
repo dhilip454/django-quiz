@@ -14,13 +14,13 @@ class Migration(migrations.Migration):
         migrations.AddField(
             model_name='progress',
             name='correct_answer',
-            field=models.CharField(default=django.utils.timezone.now, max_length=10, verbose_name='Correct Answers'),
+            field=models.CharField(default=django.utils.timezone.now, max_length=1000, verbose_name='Correct Answers'),
             preserve_default=False,
         ),
         migrations.AddField(
             model_name='progress',
             name='wrong_answer',
-            field=models.CharField(default=django.utils.timezone.now, max_length=10, verbose_name='Wrong Answers'),
+            field=models.CharField(default=django.utils.timezone.now, max_length=1000, verbose_name='Wrong Answers'),
             preserve_default=False,
         ),
     ]
