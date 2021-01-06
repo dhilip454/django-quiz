@@ -30,7 +30,7 @@ class Category(models.Model):
 
     category = models.CharField(
         verbose_name=_("Category"),
-        max_length=250, blank=True,
+        max_length=255, blank=True,
         unique=True, null=True)
 
     objects = CategoryManager()
@@ -46,15 +46,13 @@ class Category(models.Model):
 class Quiz(models.Model):
 
     title = models.CharField(
-        verbose_name=_("Title"),
-        max_length=60, blank=False)
+        verbose_name=_("Title"), blank=False)
 
     description = models.TextField(
         verbose_name=_("Description"),
         blank=True, help_text=_("a description of the quiz"))
 
-    url = models.SlugField(
-        max_length=255, blank=False,
+    url = models.SlugField( blank=False,
         help_text=_("a user friendly url"),
         verbose_name=_("user friendly url"))
 
