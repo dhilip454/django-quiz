@@ -13,6 +13,6 @@ class Migration(migrations.Migration):
         migrations.AlterField(
             model_name='mcqquestion',
             name='answer_order',
-            field=models.CharField(blank=True, choices=[('content', 'Content'), ('none', 'None')], help_text='The order in which multichoice                     answer options are displayed                     to the user', max_length=1000, null=True, verbose_name='Answer Order'),
+            field=models.CharField(blank=True, choices=[('content', 'Content'), ('none', 'None')], help_text='The order in which multichoice                     answer options are displayed                     to the user', max_length=10, null=True, verbose_name='Answer Order'),
         ),
     ]
